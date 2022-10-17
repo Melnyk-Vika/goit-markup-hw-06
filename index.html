@@ -70,8 +70,11 @@
                             <input class="checkbox" type="checkbox" name="policy" />
                             Погоджуюся з розсилкою та приймаю 
                             <a class="policy-link" href="#">Умови договору</a>
+                            <form class="form-button">
+                                <button type="submit" class="modal-button">Відправити</button>
+                            </form>
                         </label>
-                    <button type="submit" class="modal-button">Відправити</button>
+                        
                 </form>
                 <button data-modal-close href=""><svg class="modal-icon" width="30" height="30"><use href="./img/close.svg#icon-close"></use></svg></button></div></div>
             </div>
@@ -273,14 +276,15 @@
                 </ul>
             </div>
             <div class="socials">
-                <label class="title form-field " for="email">
+                <label class="form-field title mailing" for="email">
                     підпишіться на розссилку
                 </label>
-                <input class="form-email" type="email" name="email" id="email" placeholder="E-mail" />
-            </div>
-            <button type="submit" class="footer-button">Підписатися<svg class="footer-icons" width="24" height="24"><use href="./img/icons.svg#icon-icon-send"></use></svg></button>
+                <form class="subscription">
+                    <input class="form-email" type="email" name="email" id="email" placeholder="E-mail" />
+                    <button type="submit" class="footer-button">Підписатися<svg class="footer-icons" width="24" height="24"><use href="./img/icons.svg#icon-icon-send"></use></svg></button>
+                </form>
+            </div>  
     </div>
-    
   </footer>
   <script src="./js/modal.js"></script>
 </body>
