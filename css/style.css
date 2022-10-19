@@ -537,6 +537,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal {
     position: absolute;
+    padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -566,10 +567,8 @@ h1, h2, h3, h4, h5, h6 {
 
     color: var(--primary-text-color);
    
-    margin-top: 40px;
-    margin-bottom: 40px;
     margin-left: auto;
-    margin-left: auto;
+    margin-bottom: 12px;
 }
 
 .form {
@@ -616,10 +615,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-label {
-    position: absolute;
+    position: absolute; 
+    text-align: left;
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+   letter-spacing: 0.01em;
+    color: var(--title-text-collor);
+
     margin-bottom: 4px;
     margin-left: 4px;
-    text-align: left;
+    
 }
 
 .policy-link {
@@ -665,7 +673,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .checkbox:checked {
     width: 16px;
-    height: 16px;
+    height: 15px;
 }
 
 .textarea {
@@ -677,12 +685,41 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 16px; 
 }
 
+.icon-checkbox {
+    display: block;
+    position: absolute;
+    left: 25px;
+    cursor: pointer;
+    border: 2px solid var(--primary-text-color);
+    fill: var(--primary-white-color);
+    background-color: var(--primary-white-color);
+    border-radius: 2px;
+}
+
+.checkbox:checked + .icon-checkbox {
+    background-color: var(--akcent-color);
+    border-color: var(--akcent-color);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.checkbox {
+    visibility: hidden;
+}
+
+.checkbox-label {
+    display: flex;
+}
+
 .modal-button {
     position: absolute;
-    display: inline-flex;
+    display: flex;
+    justify-items: center;
+    align-items: center;
     font-size: inherit;
     cursor: pointer;
     padding: 10px 52px;
+    
 
     border: none;
     color: var(--primary-white-color);
@@ -1092,8 +1129,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .mailing {
     margin-left: 93px;
-}
-
-.form-button {
-    display: flexbox;
 }
