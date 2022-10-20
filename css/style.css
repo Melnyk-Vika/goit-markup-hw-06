@@ -615,8 +615,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-label {
-    position: absolute; 
     text-align: left;
+    position: absolute; 
     font-family: 'Roboto', sans-serif;  
     font-weight: 400;
     font-size: 12px;
@@ -712,13 +712,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-button {
-    position: absolute;
     display: flex;
     justify-items: center;
     align-items: center;
     font-size: inherit;
     cursor: pointer;
     padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     
 
     border: none;
