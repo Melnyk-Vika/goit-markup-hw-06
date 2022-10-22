@@ -678,6 +678,7 @@ letter-spacing: 0.03em;
 .form-input:hover,
 .form-input:focus {
     border: 1px solid var(--akcent-color);
+    outline: transparent;
 }    
 
 .form-field:focus-within > .forms-icon {
