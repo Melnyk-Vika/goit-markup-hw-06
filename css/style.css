@@ -726,10 +726,7 @@ letter-spacing: 0.03em;
 .icon-checkbox {
     width: 16px;
     height: 15px;
-    margin-top: 0.2em;
-    margin-left: -1em;
-    width: 0.6em;
-    height: 0.6em;
+    margin-right: 8px;
     overflow: hidden;
     border-radius: 0.05em;
     background-repeat: no-repeat;
