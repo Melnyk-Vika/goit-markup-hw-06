@@ -618,12 +618,12 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field textarea {
+.form-field .comment {
     margin: 0;
     padding: 12px 16px; 
 }
 
-.form-field textarea::placeholder {
+.form-field .comment::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
