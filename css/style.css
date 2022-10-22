@@ -710,6 +710,10 @@ letter-spacing: 0.03em;
     height: 15px;
 } 
 
+.check {
+    padding-left: 25px;
+}
+
 .comment {
     margin: 0;
     padding: 12px 16px; 
@@ -720,7 +724,6 @@ letter-spacing: 0.03em;
 }
 
 .icon-checkbox {
-    position: absolute;
     width: 16px;
     height: 15px;
     margin-top: 0.2em;
