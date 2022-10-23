@@ -749,6 +749,7 @@ h1, h2, h3, h4, h5, h6 {
 .checkbox:checked + .icon-checkbox {
     box-shadow: 0 0 0 0.1em var(--akcent-color);
     background-image: url('../img/icon-check.svg');
+    background-position: 100%;
 }
 
 .checkbox-label {
