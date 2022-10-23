@@ -650,17 +650,17 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--akcent-color);
     margin-left: 4px;
     font-family: 'Roboto', sans-serif;  
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-/* identical to box height, or 171% */
-letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
 }
 
 .forms-icon {
     position: absolute;
-    top: 65%;
+    top: 68%;
     left: 12px;
     transform: translateY(-50%); 
     display: inline-block; 
@@ -673,16 +673,21 @@ letter-spacing: 0.03em;
 .forms-icon:hover, 
 .forms-icon:focus {
     color: var(--akcent-color);
+    outline: transparent;
 }  
 
-.form-input:hover,
-.form-input:focus {
+.form-input:focus,
+.form-input:hover {
     border: 1px solid var(--akcent-color);
     outline: transparent;
 }    
 
 .form-field:focus-within > .forms-icon {
     color: var(--akcent-color);
+}
+
+.form-field input:focus + .forms-icon {
+    fill: var(--accent-color);
 }
 
 .checkbox {
@@ -722,6 +727,12 @@ letter-spacing: 0.03em;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+  
+}
+
+.comment:hover,
+.comment:focus {
+    border: 1px solid var(--akcent-color);
 }
 
 .icon-checkbox {
@@ -737,15 +748,16 @@ letter-spacing: 0.03em;
 
 .checkbox:checked + .icon-checkbox {
     box-shadow: 0 0 0 0.1em var(--akcent-color);
-    background-image: url('../img/checked.svg');
+    background-image: url('../img/icon-check.svg');
 }
 
 .checkbox-label {
-    position: absolute;
     display: flex;
     cursor: pointer;
     justify-content: center;
     align-content: center;
+    margin-bottom: 26px;
+    margin-top: 20px;
 }
 
 .modal-button {
@@ -761,7 +773,6 @@ letter-spacing: 0.03em;
     padding: 10px 52px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     border: none;
     color: var(--primary-white-color);
     background-color: var(--akcent-color);
