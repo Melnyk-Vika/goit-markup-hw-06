@@ -711,11 +711,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--title-text-collor);
 }
 
-.checkbox:checked {
-    width: 16px;
-    height: 15px;
-} 
-
 .check {
     padding-left: 10px;
 }
