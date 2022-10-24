@@ -670,34 +670,13 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.forms-icon:hover, 
-.forms-icon:focus {
-    color: var(--akcent-color);
-    outline: transparent;
-    fill: var(--akcent-color);
-}  
-
-.form-input:focus,
-.form-input:hover {
-    border: 1px solid var(--akcent-color);
-    outline: transparent;
-    fill: var(--akcent-color);
-}    
-/* 
-.form-field:focus-within > .forms-icon {
-    color: var(--akcent-color);
+.form-field:focus-within>.forms-icon {
     fill: var(--akcent-color);
 }
 
-.form-input:focus-within > .forms-icon {
-    color: var(--akcent-color);
-    fill: var(--akcent-color);
-} */
-
-.form-input:focus + .forms-icon,
-.form-input:hover + .forms-icon {
-    fill: var(--accent-color);
-    color: var(--akcent-color);
+.form-input:focus,
+.comment:focus {
+    border-color: var(--akcent-color);
 }
 
 .checkbox {
