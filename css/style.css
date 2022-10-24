@@ -683,13 +683,18 @@ h1, h2, h3, h4, h5, h6 {
     outline: transparent;
     fill: var(--akcent-color);
 }    
-
+/* 
 .form-field:focus-within > .forms-icon {
     color: var(--akcent-color);
     fill: var(--akcent-color);
 }
 
-.form-field input:focus + .forms-icon {
+.form-input:focus-within > .forms-icon {
+    color: var(--akcent-color);
+    fill: var(--akcent-color);
+} */
+
+.form-input:focus + .forms-icon {
     fill: var(--accent-color);
 }
 
