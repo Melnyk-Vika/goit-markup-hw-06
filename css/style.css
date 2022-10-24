@@ -694,8 +694,10 @@ h1, h2, h3, h4, h5, h6 {
     fill: var(--akcent-color);
 } */
 
-.form-input:focus + .forms-icon {
+.form-input:focus + .forms-icon,
+.form-input:hover + .forms-icon {
     fill: var(--accent-color);
+    color: var(--akcent-color);
 }
 
 .checkbox {
