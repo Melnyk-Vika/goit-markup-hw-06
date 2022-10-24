@@ -714,11 +714,6 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
-.comment:hover,
-.comment:focus {
-    border: 1px solid var(--akcent-color);
-}
-
 .icon-checkbox {
     width: 16px;
     height: 15px;
