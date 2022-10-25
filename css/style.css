@@ -746,6 +746,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--akcent-color);
 } 
 
+.checkbox:focus{
+    fill: var(--akcent-color);
+}
+
 .checkbox-label {
     display: flex;
     cursor: pointer;
