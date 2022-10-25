@@ -737,6 +737,14 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 100%;
 }
 
+.checkbox:focus:not(:checked) + label::after {
+    border-color: var(--akcent-color);
+}
+
+.checkbox:focus + label::after {
+    box-shadow: var(--akcent-color);
+}
+
 .checkbox-label {
     display: flex;
     cursor: pointer;
