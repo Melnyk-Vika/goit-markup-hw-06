@@ -615,6 +615,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     font: inherit;
     color: var(--primary-text-color);
+    outline: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -681,11 +682,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .checkbox {
-    position: absolute;
-    clip: rect(0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+   visibility: hidden;
 }
 
 .checkbox-text {
@@ -713,7 +710,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-  
+    outline: transparent;
 }
 
 .icon-checkbox {
@@ -734,10 +731,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .checkbox:focus + .icon-checkbox {
-    box-shadow: 0 0 0 0.1em var(--akcent-color);
-    background-image: url('../img/icon-check.svg');
-    background-position: 100%;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border: var(--akcent-color);
+    outline: transparent;
 }
 
 .checkbox-label {
